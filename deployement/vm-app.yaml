@@ -17,9 +17,9 @@ spec:
 #    plugin:
 #      name: kustomize-with-local-plugins
   syncPolicy:
-    automated:
-      prune: true
-      allowEmpty: true
-      selfHeal: true
+    automated: {}
+      # prune: true
+      # allowEmpty: true
+      # selfHeal: true
     syncOptions:
     - CreateNamespace=true
