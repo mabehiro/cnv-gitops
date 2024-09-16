@@ -4,4 +4,4 @@ kind: Kustomization
 
 resources:
   - rhel9.yaml
-  - rhel9-git2.yaml
+#  - rhel9-git2.yaml
