@@ -1,0 +1,39 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: "sno1-cluster"
+placementBindingDefaults:
+  name: sno1-cluster-placement-binding
+policyDefaults:
+  namespace: ztp-site
+  # Use an existing placement rule so that placement bindings can be consolidated
+  placement:
+    labelSelector:
+      name: "sno1"
+  remediationAction: enforce
+  namespaceSelector:
+    exclude:
+      - kube-*
+    include:
+      - '*'
+  evaluationInterval:
+    compliant: 10m
+    noncompliant: 10s
+policies:
+- name: sno1-cluster-lso-policy
+  pruneObjectBehavior: DeleteIfCreated
+  manifests:
+    - path: source-crs/lso/lso-ns.yaml
+    - path: source-crs/lso/lso-operatorgroup.yaml
+    - path: source-crs/lso/lso-subscription.yaml
+    - path: source-crs/lso/lso-localvolumeset.yaml
+- name: sno1-cluster-cnv-policy
+  pruneObjectBehavior: DeleteIfCreated
+  manifests:
+    - path: source-crs/cnv/cnv-ns.yaml
+    - path: source-crs/cnv/cnv-operatorgroup.yaml
+    - path: source-crs/cnv/cnv-subscription.yaml
+    - path: source-crs/cnv/cnv-instance.yaml
+
+
+
