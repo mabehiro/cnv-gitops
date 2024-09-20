@@ -27,7 +27,7 @@ policies:
     - path: source-crs/lso/lso-operatorgroup.yaml
     - path: source-crs/lso/lso-subscription.yaml
     - path: source-crs/lso/lso-localvolumeset.yaml
-    - path: source-crs/lso-storageclass.yaml
+    - path: source-crs/lso/lso-storageclass.yaml
 - name: sno1-cluster-cnv-policy
   pruneObjectBehavior: DeleteIfCreated
   manifests:
