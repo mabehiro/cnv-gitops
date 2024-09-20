@@ -20,14 +20,14 @@ policyDefaults:
     compliant: 10m
     noncompliant: 10s
 policies:
-# - name: sno1-cluster-lso-policy
-#   pruneObjectBehavior: DeleteIfCreated
-#   manifests:
-#     - path: source-crs/lso/lso-ns.yaml
-#     - path: source-crs/lso/lso-operatorgroup.yaml
-#     - path: source-crs/lso/lso-subscription.yaml
-#     - path: source-crs/lso/lso-localvolumeset.yaml
-#     - path: source-crs/lso/lso-storageclass.yaml
+- name: sno1-cluster-lso-policy
+  # pruneObjectBehavior: DeleteIfCreated
+  manifests:
+    - path: source-crs/lso/lso-ns.yaml
+    - path: source-crs/lso/lso-operatorgroup.yaml
+    - path: source-crs/lso/lso-subscription.yaml
+    - path: source-crs/lso/lso-localvolumeset.yaml
+    - path: source-crs/lso/lso-storageclass.yaml
 - name: sno1-cluster-cnv-policy
   pruneObjectBehavior: DeleteIfCreated
   manifests:
