@@ -6,5 +6,5 @@ generators:
 - sno1-cluster.yaml
 
 resources:
-- pull-secret.yaml
+# - pull-secret.yaml
 - sno1-cluster-secrets.yaml
