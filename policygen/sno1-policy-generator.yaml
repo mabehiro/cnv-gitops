@@ -34,6 +34,8 @@ policies:
     - path: source-crs/lvm/instance.yaml
     - path: source-crs/lvm/ns.yaml
     - path: source-crs/lvm/subscription.yaml
+    - path: source-crs/lvm/scprofile.yaml
+    - path: source-crs/lvm/sc.yaml
 - name: sno1-cluster-cnv-policy
   pruneObjectBehavior: DeleteIfCreated
   manifests:
