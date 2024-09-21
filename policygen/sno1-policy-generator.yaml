@@ -28,21 +28,21 @@ policies:
 #     - path: source-crs/lso/lso-subscription.yaml
 #     - path: source-crs/lso/lso-localvolumeset.yaml
 #     - path: source-crs/lso/lso-storageclass.yaml
-- name: sno1-cluster-lvm-policy
-  pruneObjectBehavior: DeleteIfCreated
-  manifests:
-    - path: source-crs/lvm/instance.yaml
-    - path: source-crs/lvm/ns.yaml
-    - path: source-crs/lvm/subscription.yaml
-    - path: source-crs/lvm/scprofile.yaml
-    - path: source-crs/lvm/sc.yaml
-- name: sno1-cluster-cnv-policy
-  pruneObjectBehavior: DeleteIfCreated
-  manifests:
-    - path: source-crs/cnv/cnv-ns.yaml
-    - path: source-crs/cnv/cnv-operatorgroup.yaml
-    - path: source-crs/cnv/cnv-subscription.yaml
-    - path: source-crs/cnv/cnv-instance.yaml
+# - name: sno1-cluster-lvm-policy
+#   pruneObjectBehavior: DeleteIfCreated
+#   manifests:
+#     - path: source-crs/lvm/instance.yaml
+#     - path: source-crs/lvm/ns.yaml
+#     - path: source-crs/lvm/subscription.yaml
+#     - path: source-crs/lvm/scprofile.yaml
+#     - path: source-crs/lvm/sc.yaml
+# - name: sno1-cluster-cnv-policy
+#   pruneObjectBehavior: DeleteIfCreated
+#   manifests:
+#     - path: source-crs/cnv/cnv-ns.yaml
+#     - path: source-crs/cnv/cnv-operatorgroup.yaml
+#     - path: source-crs/cnv/cnv-subscription.yaml
+#     - path: source-crs/cnv/cnv-instance.yaml
 
 
 

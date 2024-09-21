@@ -35,6 +35,8 @@ spec:
     #   # httpProxy: http://117.252.9.178:3128
     #   # httpsProxy: http://117.252.9.178:3128
     #   noProxy: .cotton.blue
+    crTemplates:
+     KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
     nodes:
       - hostName: "sno1"
         role: "master"
