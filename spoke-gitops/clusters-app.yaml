@@ -28,7 +28,10 @@ spec:
     syncOptions:
     - CreateNamespace=true
   ignoreDifferences:
-  - kind: Secret
+  - group: '*'
+    kind: Secret
     name: sno1-cluster-secret
+    jsonPointers:
+    - /data
 
 
